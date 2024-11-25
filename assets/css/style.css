@@ -8,12 +8,11 @@ body {
   height: 600px;
   background-color: black;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 5px; 
-  margin: auto; 
+  margin: 0 auto; 
 
 
-  
 
   & .item {
     background-color: red;
@@ -23,6 +22,7 @@ body {
     font-weight: 700;
     color: white;
     counter-increment: number 1;
+
     display: grid;
     place-items: start end;
     padding: 0.25rem 0.75rem;
@@ -35,12 +35,12 @@ body {
       content: counter(number);
     }
 
-    &:nth-child(4) {
+    &:nth-child(6) {
       background-color: blue;
-      grid-column-start: 4;
-      grid-column-end: 6;
-      grid-row-start: 1; 
-      grid-row-end: 3; 
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 2; 
+      grid-row-end: 4; 
     }
 
   }
